@@ -20,11 +20,9 @@ client.user.setAvatar(argresult);
       } else     
   if (message.content.startsWith(adminprefix + 'wt')) {
   client.user.setActivity(argresult, {type:'WATCHING'});
-      message.channel.sendMessage(`**:white_check_mark:   ${argresult}**`)
   } else
   if (message.content.startsWith(adminprefix + 'ls')) {
   client.user.setActivity(argresult , {type:'LISTENING'});
-      message.channel.sendMessage(`**:white_check_mark:   ${argresult}**`)
   } else    
 if (message.content.startsWith(adminprefix + 'sett')) {
   client.user.setGame(argresult, "https://www.twitch.tv/xkilleryt");//حقوق دايموند كودزحقوق دايموند كودز
