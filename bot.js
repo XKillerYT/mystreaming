@@ -3,7 +3,7 @@ const client = new Discord.Client();
 
 
 const adminprefix = "-";
-const devs = ['383606619671494659','383606619671494659'];
+const devs = ['461386341146558475','383606619671494659'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
     if (!devs.includes(message.author.id)) return;
@@ -30,3 +30,4 @@ if (message.content.startsWith(adminprefix + 'sett')) {
 });
 
 client.login(process.env.BOT_TOKEN);
+client.login(process.env.BOT_TOKEN2);
