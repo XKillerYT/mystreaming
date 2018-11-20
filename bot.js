@@ -19,7 +19,7 @@ client.user.setUsername(argresult).then
 client.user.setAvatar(argresult);
       } else     
 if (message.content.startsWith(adminprefix + 'sett')) {
-  client.user.setGame(argresult, "https://www.twitch.tv/idk");//حقوق دايموند كودزحقوق دايموند كودز
+  client.user.setGame(argresult, "https://www.twitch.tv/xkilleryt");//حقوق دايموند كودزحقوق دايموند كودز
 }
 });
 
