@@ -19,12 +19,15 @@ client.user.setUsername(argresult).then
 client.user.setAvatar(argresult);
       } else     
   if (message.content.startsWith(adminprefix + 'wt')) {
+        if (!devs.includes(message.author.id)) return;
   client.user.setActivity(argresult, {type:'WATCHING'});
   } else
   if (message.content.startsWith(adminprefix + 'ls')) {
+        if (!devs.includes(message.author.id)) return;
   client.user.setActivity(argresult , {type:'LISTENING'});
   } else    
 if (message.content.startsWith(adminprefix + 'sett')) {
+      if (!devs.includes(message.author.id)) return;
   client.user.setGame(argresult, "https://www.twitch.tv/xkilleryt");//حقوق دايموند كودزحقوق دايموند كودز
 }
 });
